@@ -1,0 +1,3 @@
+"Welcomme To C"
+
+C is the base language for all programmng languges, There are mainly two types of languges such as procedure oriented nad object oriented, and C is procedural language, and java , paython and c++ are object oriented languages
