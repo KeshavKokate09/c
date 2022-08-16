@@ -1,3 +1,20 @@
 Operators
 
-There are SOME operators in C, such as logical operator, Arithmetic operator, bitwise operartor, 
+There are Three types of operators in C, Unary, Binary and Ternary
+Unary : When there is only one oprand in the expression then this is calle das Unary operator. 
+	1.Unary Operator has mainly two operators such as "pre" and "post".
+	2.Unary Operators (++, --)
+	3. ++ Increament = PreIncrement (++var) and PostIncrement (var++)
+	4. -- Decreament = PreDecrement (--var) and PostDecrement (var--)
+	5.using same multiple unary operations on same line using single or the same variable is bad practice of programming
+
+Binary : when There are two oerands in the expression then this type of expression are called as binary Operators.
+	1. Binary operators subdivided into 
+		a. Arithmetic : it contains (+,-,*,/,%)
+		b. Logical : it contains (&& and ||) 
+			1. 0 means false
+			2. other than all numbers are true;
+		c. relational : it contains (<=,<,>,>=,==,!=)
+		d. bitwise : it contains (<<,>>,&,|,xor)
+		e. Assignment : it contains (=, +=, -=, *=,/=)
+Ternery : When there are 3 oprands in a expression then this type of ex[ression is called as ternery operator.
