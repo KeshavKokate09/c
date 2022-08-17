@@ -1,0 +1,7 @@
+1. ls(List)
+	1. ls used view list of files except hidden
+	2. ls -a used for list all files incluing hidden files and "." and ".."
+	3. ls lists the files by deafult in asending order
+	4. ls -s or --size used to list file according to size of files
+	5. order is 0-9 first then small aAbBcC......zZ
+	6. 
