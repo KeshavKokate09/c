@@ -1,0 +1,108 @@
+	
+		Martin Richards devloped a high level computer language called bcpl in your 1967 the intention was developed a language for writing an operating system as you know and OS is a software which controls the various processing computer system
+	This language letter improved by King Thomson and he gave it new name "B".The basic idea about some topic such as Arrays etc cetera which were letter inherited by c where developed in bcpl and b
+Serious constant experience while developing the language be was a small computer memory available at that time
+In 1972 a great computer scientist name Denis richie created the c programming language at the built telephone laboratories for use with the Unix operating system it was name c because most of the features where derived from an earlier language called B.
+Any of the ideas of structure of c language were taken from bcpl and b which has given excellent explosion of the problems experience during development of c in his lecture entitle the development of the c language.
+
+********COMPILATION****************
+
+In simple ways we can compile the code using command CC program 1.c 
+Then a executable file is generated naming a.out we can run this file on terminal using command ./a.out
+
+During compilation process company perform some processes which are normally hidden from a and user but it a multi - stage process
+And Oreo level the process can be split into four separate stages pre processing compilation assembly and linking
+
+Pre prossesing : 
+  The first stage of comparison is called preprocessing in this stage line starting with a hash character are integrated by a processor as preprocessor commands to print the result of the preprocessing stage pass the-e option to cc cc -E programme1.c
+Processor will produce the contents of the STD io.h header file join with the contents of the program one dot c file
+
+Compilation :
+   The second stage of compilation is confusingly enough call compilation in the stage the pre-process code is translated to assembly instruction specific to target processor architecture to save the result of comparison stage pass the -S option to cc
+cc -S program1.c this will create a file name program 1.c containing the generated assembly instructions
+
+Assembling :
+  During the assembly state and assembler is used to translate the assembly instructions to machine code or object consist of actual instructions to be run by the target processor save the result of assembly stage pass the -c option to cc
+cc -c program1.c
+Running the above command will create a file name program one.o containing the object code of the program
+The contents of this file is a binary format and can be inspected using hexdump, od or xxd by running either one of the following commands
+hexdump program1.o
+od -c program1.o
+xxd -b program1.o
+
+Linking :
+   The object code generated in the assembly stage is composed of machine instructions that the processor understand but some pieces of program are out of order or missing 
+To produce an executable program the existing pieces how to be rearranged and the missing once filled in the process is called linking
+Linker will arranged pieces of object code so that functions in some pieces can successfully call functions in other pieces (from Libc.so)
+It will also add PCS containing the instructions for library functions used by the program in the case of the program one the linker will add the object code for the printf() function
+Result of the stage is the final executable program while run without option CC will name this file a.out
+To name the file something else pass the -o option to cc
+cc -o program1 program.c
+
+
+**************************** DATA TYPES ***********************
+	The data type is defend as a collection of data with values having a specific fix meaning and characteristics individual character etc are some of the most common types a programming language specifies the range for a data types
+Data types are used in order to identify the type of variable when declared the return type of the function and what type of parameters are expected by the function
+
+In other words in the data type dictates the variable and what type of data it can store every data type need some amount of memory which varies from one data type to another is data type has some specific operation which can be performed over it
+
+Primitive data type :
+Int :
+This data type is used in order to store integer value memory used by in data type is 4 bytes the range of in data type is from - 2147483 648 to 2214748 3467
+In a = 320;
+
+
+Char :
+This data type is used in order to store one single character and it requires only a single bite of memory memory used by cat and a type is one byte the range of type is from - 128 to 127
+
+char a ='A';
+
+Float : 
+This data type is used in order to store decimal numbers with single precision memory used by float data type is 4 bytes the range of floor data type is from 1.2e - 38 to 3.4e + 38
+
+Double :
+This data type is used in order to store decimal numbers with double precision memory used by double data type is it bites the range of the world data type is from 2.3 - 308 to 1.7 e + 308
+
+Void : 
+This data type is used with function when the function doesn't return any value 
+
+sizeof() : 
+Size of data type returns the size of the address value that is byte address
+That points to a bite position in memory that stores a data type value
+
+
+
+Derived data types ::
+Array :
+An array is defined as the collection of similar items stored at contagious memory location and array is basically a sequence of data items that have homogeneous values the idea of using an array is to represent many instances in one variable
+Int student(100);
+
+Pointers : 
+Pointers refer to a variable that holds the address of another vapour like any other weighbor that to have a data type it allow programs to simulate call by reference and create and manipulate dynamic data structures
+char * name;
+[3:27 PM, 8/24/2022] Keshav: User defined datatypes: 
+Structure: 
+A structure is used to create a data type which is a collection of variables of different data types group together under a single name the struct keyword is used to declare a structure in the c programming language
+
+Union : in a union all the members who are defined share the same memory location that is any change brought in one member of union will be reflected in all other members
+
+Enumeration : it is a user defined data type whose main purpose is to make the program easy to read and maintain in short it is used to assign meaningful full names to integral constance the keyword enum is used to define an enumeration in c language
+
+Variables : in the simplest terms you can think of variables as a name box a box that act as a storage place and location for holding different information that can very in content each box has a unique name which acts like a label put on the outside that is unique identifier and the information or contents leaves on inside the content is a variables value the data is stored in the computer's memory and takes up a certain amount of space it lives there so we can retrieve it later and use it in our program when we need to
+
+variable assignment in C: 
+The value that is on right to a specific variable name that is on the left you can use = or the assignment operator to do this
+Declare int a;
+Initialisation int a= 10;
+
+🗝️ Points : 
+1. Variable name most begin either with a letter or an underscore for example edge and underscore is valid
+2. A variable name can content letters uppercase or lowercase numbers or an underscore
+3. There can be no other special symbols besided and_variable names RK sensitive for example age is different from Age
+
+Scope of variables in C:
+1. Local scope : 
+  If a variable is declared within a set of curly braces that will be its scope and we can't access it and use it outside those braces in the rest of the program the rest of the program won't no it exists
+
+Global scope : 
+If variables are declared outside of functions they have global scope global scope means they are visible within the whole program and can be accessed from anywhere
