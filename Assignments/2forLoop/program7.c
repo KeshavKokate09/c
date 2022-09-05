@@ -10,7 +10,7 @@ void main(){
 
 	int lcm=1;
 	for(int i=2; i<=n1*n2; i++){
-		if(n1%i == 0 && n2 %i == 0){
+		if(i%n1 == 0 && i%n2 == 0){
 			printf("LCM of (%d,%d) is = %d\n",n1,n2,i);
 			break;
 		}
