@@ -9,30 +9,11 @@ void main(){
 	scanf("%d",&n2);
 
 	int lcm=1;
-
-	/* WIP
-	 *
-	 */
-	for(int i =1; i<=n1+n2; i++){
-		if(n1%i == 0 && n2 % i == 0){
-			lcm = lcm * i;
-			n2=n2/i;
-			n1=n1/i;
-			i=1;
-		}else if(n1 % i == 0 && n1 >= i && n2 %i !=0){
-			lcm = lcm * i;
-			n2=n2/i;
-			n1=n1/i;
-			i=1;
-		}else if(n2 % i == 0 && n2>=i && n1%i!=0){
-			lcm = lcm*i;
-			n2=n2/i;
-			n1=n1/i;
-			i=1;
+	for(int i=2; i<=n1*n2; i++){
+		if(n1%i == 0 && n2 %i == 0){
+			printf("LCM of (%d,%d) is = %d\n",n1,n2,i);
+			break;
 		}
-	printf("LCM of (%d,%d) is = %d\n",n1,n2,lcm);
 
 	}
-
-	printf("LCM of (%d,%d) is = %d",n1,n2,lcm);
 }

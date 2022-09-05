@@ -13,11 +13,11 @@ void main(){
 	printf("Enter The Third num :\n");
 	scanf("%d",&third);
 
-	if(first<second && first<=third){
+	if(first<=second && first<=third){
 		printf("%d is min",first);
-	}else if(second<first && second <=third){
+	}else if(second<=first && second <=third){
 		printf("%d is min",second);		
-	}else if(third<first && third<=second){
+	}else if(third<=first && third<=second){
 		printf("%d is min",third);
 	}else {
 		printf("All are same");
