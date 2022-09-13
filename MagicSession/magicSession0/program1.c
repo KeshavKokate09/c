@@ -12,4 +12,5 @@ void main(){
 			printf("%d  ",i);
 		}
 	}
+	printf("%d ",input);
 }

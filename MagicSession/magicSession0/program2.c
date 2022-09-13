@@ -9,7 +9,7 @@ void main(){
 	scanf("%d",&input);
 	int count=0;
 
-	while(input>1){
+	while(input!=0){
 		input=input/10;
 		count++;
 	}
